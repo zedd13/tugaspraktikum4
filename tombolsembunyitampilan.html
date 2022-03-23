@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMBOL SEMBUNYI DAN TAMPILKAN</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyi1").click(function () {
+                $("#foto1").hide("slow")
+            });
+            $(".tampil1").click(function () {
+                $("#foto1").show("slow")
+            });
+            $(".sembunyi2").click(function () {
+                $("#foto2").hide("slow")
+            });
+            $(".tampil2").click(function () {
+                $("#foto2").show("slow")
+            });
+            $(".sembunyi3").click(function () {
+                $("#foto3").hide("slow")
+            });
+            $(".tampil3").click(function () {
+                $("#foto3").show("slow")
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1> MENAMPILKAN DAN MENYEMBUNYIKAN GAMBAR </h1>
+    <button class="sembunyi1">Sembunyikan</button>
+    <button class="tampil1">Tampilkan</button>
+    <p><img id="foto1" src="upn.png"></p>
+
+    <button class="sembunyi2">Sembunyikan</button>
+    <button class="tampil2">Tampilkan</button>
+    <p><img id="foto2" src="NewLogoHimasifo.png"></p>
+
+    <button class="sembunyi3">Sembunyikan</button>
+    <button class="tampil3">Tampilkan</button>
+    <p><img id="foto3" src="fasilkom.jpg"></p>
+</body>
+
+</html>

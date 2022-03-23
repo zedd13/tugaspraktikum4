@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT DOUBLE CLICK</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("div").dblclick(function () {
+                $("#kotak1").dblclick(function () {
+                    $("#kotak1").addClass("warna");
+                    $("#kotak2").dblclick(function () {
+                        $("#kotak2").addClass("warna2");
+                        $("#kotak3").dblclick(function () {
+                            $("#kotak3").addClass("warna3");
+                            $("#kotak4").dblclick(function () {
+                                $("#kotak4").addClass("warna4");
+                            })
+                        })
+                    })
+                })
+            })
+        });
+    </script>
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 0 10px;
+            float: left;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .warna {
+            background-color: #ff0000;
+        }
+
+        .warna2 {
+            background-color: #00fbff;
+        }
+
+        .warna3 {
+            background-color: #00ff1a;
+        }
+
+        .warna4 {
+            background-color: #d8a0a0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EVENT DOUBLE CLICK PADA KOTAK</h1>
+    <p>Klik 2x Pada Setiap Kotak Untuk Mengubah Warnanya</p>
+    <div id="kotak1"></div>
+    <div id="kotak2"></div>
+    <div id="kotak3"></div>
+    <div id="kotak4"></div>
+</body>
+
+</html>
